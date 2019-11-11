@@ -68,7 +68,7 @@ app.get('/users/:id', (req, res) => {
 	res.send(`当前我们是在获取id为${id}用户信息`);
 });
 
-// 删除某一个用户
+// 删除某一个用户//第二次提交
 app.delete('/users/:id', (req, res) => {
 	// 获取客户端传递过来的用户id
 	const id = req.params.id;
@@ -82,10 +82,10 @@ app.put('/users/:id', (req, res) => {
 	res.send(`当前我们是在修改id为${id}用户信息`);
 });
 
-app.get('/xml', (req, res) => {
-	res.header('content-type', 'text/xml');
-	res.send('<message><title>消息标题</title><content>消息内容</content></message>')
-});
+// app.get('/xml', (req, res) => {
+// 	res.header('content-type', 'text/xml');
+// 	res.send('<message><title>消息标题</title><content>消息内容</content></message>')
+// });
 
 
 // 监听端口
